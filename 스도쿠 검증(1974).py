@@ -14,6 +14,9 @@ for i in range(1, T+1):
         if row_arr != [1,2,3,4,5,6,7,8,9] or col_arr != [1,2,3,4,5,6,7,8,9]:
             valid = False
             break
+        else:
+            row_arr = []
+            col_arr = []
 
     for x in range(0, 9, 3):
         square_arr = []
@@ -24,6 +27,8 @@ for i in range(1, T+1):
                 if square_arr != [1,2,3,4,5,6,7,8,9]:
                     valid = False
                     break
+                else:
+                    square_arr = []
                 
     if valid:
         print('#'+str(i), 1)
