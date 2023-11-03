@@ -17,3 +17,4 @@ for i in range(1, T+1):
             if answer == K:
                 cnt += 1
             
+    print('#'+str(i), cnt)
